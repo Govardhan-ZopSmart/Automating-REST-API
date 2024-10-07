@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"ceeec8bb-5d42-492a-8f49-df024844dead",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.api.post-user</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-10-07 05:26:21 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:31]"><span>[1:31]</span> <span>Fail to create a user with an invalid email format</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:49]"><span>[2:49]</span> <span>Fail to create a user with a blank name</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:67]"><span>[3:67]</span> <span>Fail to create a user with blank gender</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:84]"><span>[4:84]</span> <span>Fail to create a user with blank status</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:102]"><span>[5:102]</span> <span>Fail to create a user with invalid status</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/api/post-user.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create a new user via GoRest API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:31]</span>
+                <span class="scenario-name">Fail to create a user with an invalid email format</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>556</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:26:20.328 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.33">{
+    &quot;name&quot;: &quot;ankit rajput&quot;,
+    &quot;email&quot;: &quot;ankitrajpuail.com&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">552</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">17:26:20.356 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 85
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;ankit rajput&quot;,&quot;email&quot;:&quot;ankitrajpuail.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
+
+17:26:20.881 response time in milliseconds: 523
+1 &lt; 422
+1 &lt; Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 63
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 86
+1 &lt; x-ratelimit-reset: 4
+1 &lt; x-request-id: aa83db64-1fe5-4833-8f46-73c6033549e6
+1 &lt; x-runtime: 0.098093
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=MsuuK%2BZczbDlm00P5uEDd548aK%2BmYUadD6Zx4CIWp5RoEPfN5kHPaGyuzM7u5dt4AnmSabHCtMK3MnJrYo3fYdtxYlReez9Jc9n8ECU67nFSZO7oJBc7%2BWiGDUw6vAE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8cedb5148b5e89ad-SIN
+{&quot;meta&quot;:null,&quot;data&quot;:[{&quot;field&quot;:&quot;email&quot;,&quot;message&quot;:&quot;is invalid&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].field == &#39;email&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].message == &#39;is invalid&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.46">17:26:20.885 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;field&quot;: &quot;email&quot;,
+      &quot;message&quot;: &quot;is invalid&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:49]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:49]</span>
+                <span class="scenario-name">Fail to create a user with a blank name</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>550</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:49]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:26:20.369 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:49]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.51">{
+    &quot;name&quot;: &quot;&quot;,
+    &quot;email&quot;: &quot;ankit@gmail.com&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">549</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">17:26:20.370 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 71
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;&quot;,&quot;email&quot;:&quot;ankit@gmail.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
+
+17:26:20.918 response time in milliseconds: 548
+1 &lt; 422
+1 &lt; Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 66
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 85
+1 &lt; x-ratelimit-reset: 4
+1 &lt; x-request-id: a8a33241-6e2d-4f96-a98a-ca1347e35a11
+1 &lt; x-runtime: 0.088012
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=yzEzFHvPPoieq1q%2FHRmVW8ecXi6yg98rW%2FoQaflIxHp1Jd86BBmw9bImoi43wntHrumqGEo23InhbPvZxu2o5XZYMxRtDIEAg1uLD2JTpUNDgtm%2B2hydgiMZLUSG5IQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8cedb514cfa187a5-SIN
+{&quot;meta&quot;:null,&quot;data&quot;:[{&quot;field&quot;:&quot;name&quot;,&quot;message&quot;:&quot;can&#39;t be blank&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].field == &#39;name&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].message == &quot;can&#39;t be blank&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.64">17:26:20.919 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;field&quot;: &quot;name&quot;,
+      &quot;message&quot;: &quot;can&#39;t be blank&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:67]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:67]</span>
+                <span class="scenario-name">Fail to create a user with blank gender</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>722</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:67]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:26:20.481 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:67]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.69">{
+    &quot;name&quot;: &quot;ankit rajput&quot;,
+    &quot;email&quot;: &quot;ankit@gmail.com&quot;,
+    &quot;gender&quot;: &quot;&quot;,
+    &quot;status&quot;: &quot;active&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">721</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.78">17:26:20.483 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 79
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;ankit rajput&quot;,&quot;email&quot;:&quot;ankit@gmail.com&quot;,&quot;gender&quot;:&quot;&quot;,&quot;status&quot;:&quot;active&quot;}
+
+17:26:21.203 response time in milliseconds: 719
+1 &lt; 422
+1 &lt; Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 91
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 83
+1 &lt; x-ratelimit-reset: 6
+1 &lt; x-request-id: 712cad38-515d-49dc-9409-84b9ec170f61
+1 &lt; x-runtime: 0.281369
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=wapbbgjfc3V3nIc4dHpa4jlzakgX3lFZ%2FWpEMpjTbZn45OsZNygX63Ot7vR%2BB1n5fcwumK5u7X8ukI5ucCSt9FkkJIhr3dnYdqY5A7A7JpE9yneTsseqdlLBiQZwTKM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8cedb51568469fc5-SIN
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;meta&quot;:null,&quot;data&quot;:[{&quot;field&quot;:&quot;gender&quot;,&quot;message&quot;:&quot;can&#39;t be blank, can be male of female&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].message == &quot;can&#39;t be blank, can be male of female&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.81">17:26:21.204 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;field&quot;: &quot;gender&quot;,
+      &quot;message&quot;: &quot;can&#39;t be blank, can be male of female&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:84]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:84]</span>
+                <span class="scenario-name">Fail to create a user with blank status</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>340</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:84]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:84]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:26:20.619 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:84]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:84]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.86">{
+    &quot;name&quot;: &quot;ankit rajput&quot;,
+    &quot;email&quot;: &quot;ankit@gmail.com&quot;,
+    &quot;gender&quot;: &quot;male&quot;
+            
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">339</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.95">17:26:20.620 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 65
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;ankit rajput&quot;,&quot;email&quot;:&quot;ankit@gmail.com&quot;,&quot;gender&quot;:&quot;male&quot;}
+
+17:26:20.958 response time in milliseconds: 338
+1 &lt; 422
+1 &lt; Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 68
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 84
+1 &lt; x-ratelimit-reset: 5
+1 &lt; x-request-id: d6620204-d7fe-4e0a-9346-6b3a1232f5b2
+1 &lt; x-runtime: 0.073119
+1 &lt; x-xss-protection: 0
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=MQq156hI3SaBuYKb%2FE9tx18ANgQrKv5ohP8s1A9y7g9M2DdpMA5vQK6%2FZXKEZm6XVogJnwOT4QNKqIrjz9lUyg3D4k9JqwjQ%2FZX%2BDRb1Ov2Gx7BwKGE%2Fmt4PYtvZqxM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8cedb5162fd09b90-SIN
+{&quot;meta&quot;:null,&quot;data&quot;:[{&quot;field&quot;:&quot;status&quot;,&quot;message&quot;:&quot;can&#39;t be blank&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].field == &#39;status&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].message == &quot;can&#39;t be blank&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">17:26:20.959 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;field&quot;: &quot;status&quot;,
+      &quot;message&quot;: &quot;can&#39;t be blank&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:102]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:102]</span>
+                <span class="scenario-name">Fail to create a user with invalid status</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>483</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:102]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:26:20.887 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = &#39;b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:102]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.104">{ &quot;name&quot;: &quot;Ankit Rajput&quot;, &quot;email&quot;: &quot;ankitrajput@gmail.com&quot;, &quot;gender&quot;: &quot;male&quot;, &quot;status&quot;: &quot;invalid&quot; }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">481</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.108">17:26:20.889 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 90
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;Ankit Rajput&quot;,&quot;email&quot;:&quot;ankitrajput@gmail.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;invalid&quot;}
+
+17:26:21.369 response time in milliseconds: 480
+1 &lt; 422
+1 &lt; Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 121
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-cache
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-download-options: noopen
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 81
+1 &lt; x-ratelimit-reset: 7
+1 &lt; x-request-id: 8ac71b6f-ddf6-4df4-a15c-94982ce18411
+1 &lt; x-runtime: 0.063862
+1 &lt; x-xss-protection: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v4?s=U5EKJnnPu5pMpZuxl%2Bj5SzueXyVSEc7Gffw%2B%2BbFoLXq8V3FcHs2Wv%2B8HTClobyhT7p%2FrqAUqWi3p7ltwYreWGZkzQwrlEO9%2F2eZH3hmDCoUMD%2BhvVL6wDVZWMeQ2HsE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8cedb517cbc740ee-SIN
+{&quot;meta&quot;:null,&quot;data&quot;:[{&quot;field&quot;:&quot;status&quot;,&quot;message&quot;:&quot;can&#39;t be blank&quot;},{&quot;field&quot;:&quot;email&quot;,&quot;message&quot;:&quot;has already been taken&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.109">
+      <div class="step-ref passed">109</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 422</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].field == &#39;status&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.data[0].message == &quot;can&#39;t be blank&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.112">17:26:21.371 [print] {
+  &quot;meta&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;field&quot;: &quot;status&quot;,
+      &quot;message&quot;: &quot;can&#39;t be blank&quot;
+    },
+    {
+      &quot;field&quot;: &quot;email&quot;,
+      &quot;message&quot;: &quot;has already been taken&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
