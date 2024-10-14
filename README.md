@@ -41,13 +41,13 @@ mvn test
 
 ```
 karate-api-testing
- ├── .vscode                           
+ ├── .vscode                           # Configuration files for Visual Studio 
  ├── src
  │   └── test
  │       └── java
  │           └── examples
  │               ├── get-users.feature 
- │               ├── post-user.feature 
+ │               ├── post-user.feature # Test cases for GET user
  │               ├── put-user.feature  # Test cases for PUT user
  │               └── delete-user.feature # Test cases for DELETE user
  │           ├── karate-config.js      # Configuration for Karate
