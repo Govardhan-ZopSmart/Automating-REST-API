@@ -41,13 +41,13 @@ mvn test
 
 
 karate-api-testing
- ├── .vscode                           # Configuration files for Visual Studio Code
+ ├── .vscode                           
  ├── src
  │   └── test
  │       └── java
  │           └── examples
- │               ├── get-users.feature # Test cases for GET user
- │               ├── post-user.feature # Test cases for POST user
+ │               ├── get-users.feature 
+ │               ├── post-user.feature 
  │               ├── put-user.feature  # Test cases for PUT user
  │               └── delete-user.feature # Test cases for DELETE user
  │           ├── karate-config.js      # Configuration for Karate
@@ -80,7 +80,10 @@ target/karate-reports/karate-summary.html
 
 
 ### Sample Test Execution Result
+<img width="1680" alt="Screenshot 2024-10-07 at 5 26 40 PM" src="https://github.com/user-attachments/assets/e7f37615-ba4e-4f12-996a-4a6df676e9cc">
 
-![Test Execution Result](path_to_your_screenshot.png)
+<img width="1680" alt="Screenshot 2024-10-07 at 5 26 35 PM" src="https://github.com/user-attachments/assets/e3d6ccbc-45f7-471c-87dd-a561a45db733">
+
+<img width="1680" alt="Screenshot 2024-10-07 at 5 34 23 PM" src="https://github.com/user-attachments/assets/0173b30e-e05d-4154-ada9-9240d5a69837">
 
 Open the `karate-summary.html` file in your browser to view detailed results including passed/failed test cases and response times.
