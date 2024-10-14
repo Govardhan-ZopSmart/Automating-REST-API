@@ -5,16 +5,16 @@ Background:
     * def authToken = 'b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8'
     * header Authorization = 'Bearer ' + authToken
 
-# Scenario: Successfully delete an existing user
-#     Given path 'users', '7454263'  
-#     When method DELETE
-#     Then status 204  
+Scenario: Successfully delete an existing user
+    Given path 'users', '7454263'  
+    When method DELETE
+    Then status 204  
 
-#     # Verify that the user has been deleted
-#     Given path 'users', '7454263'
-#     When method GET
-#     Then status 404
-#     And match response.data.message == "Resource not found"
+    # Verify that the user has been deleted
+    Given path 'users', '7454263'
+    When method GET
+    Then status 404
+    And match response.data.message == "Resource not found"
 
 Scenario: Fail to delete a non-existing user
     Given path 'users', '999999'  

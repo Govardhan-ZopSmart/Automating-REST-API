@@ -6,24 +6,24 @@ Background:
     * header Authorization = 'Bearer ' + authToken
 
 #Positive Case - Create a User Successfully
-# Scenario: create a new user successfully
-#     Given path 'users'
-#     And request
-#     """
-#     {
-#         "name": "Ankit Rajput",
-#         "email": "ankitrajput9876@example.com",
-#         "gender": "male",
-#         "status": "active"
-#     }
-#     """
-#     When method POST
-#     Then status 201
-#     And match response.data.name == "Ankit Rajput"
-#     And match response.data.email == "ankitrajput9876@example.com"
-#     And match response.data.gender == "male"
-#     And match response.data.status == "active"
-#     And print response
+Scenario: create a new user successfully
+    Given path 'users'
+    And request
+    """
+    {
+        "name": "Ankit Rajput",
+        "email": "ankitrajput9876@example.com",
+        "gender": "male",
+        "status": "active"
+    }
+    """
+    When method POST
+    Then status 201
+    And match response.data.name == "Ankit Rajput"
+    And match response.data.email == "ankitrajput9876@example.com"
+    And match response.data.gender == "male"
+    And match response.data.status == "active"
+    And print response
 
 # 7454254 , 7454255, 7454263
 
