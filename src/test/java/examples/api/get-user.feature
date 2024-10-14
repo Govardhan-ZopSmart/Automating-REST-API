@@ -16,6 +16,15 @@ Scenario: Fetch details of an existing user
     And match response.data.status == 'active'  
     And print response
 
+# Verify that the user has been deleted
+Scenario: Fail to fetch user details with a deleted user id
+    Given path 'users', '7454263'
+    When method GET
+    Then status 404
+    And match response.data.message == "Resource not found"
+    And print response
+
+
 # Scenario: Validate user not found with an invalid ID
 Scenario: Fail to fetch user details with an invalid id
     Given path 'users', '999999'

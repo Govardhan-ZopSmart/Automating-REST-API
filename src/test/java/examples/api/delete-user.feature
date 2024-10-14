@@ -10,12 +10,7 @@ Scenario: Successfully delete an existing user
     When method DELETE
     Then status 204  
 
-    # Verify that the user has been deleted
-    Given path 'users', '7454263'
-    When method GET
-    Then status 404
-    And match response.data.message == "Resource not found"
-
+    
 Scenario: Fail to delete a non-existing user
     Given path 'users', '999999'  
     When method DELETE
