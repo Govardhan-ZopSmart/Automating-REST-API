@@ -1,0 +1,1415 @@
+17:26:18.419 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:26:18.422 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+17:26:18.943 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:18.943 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:18.943 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:18.943 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:18.943 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:19.065 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public/v1/users/7454263
+1 > Authorization: null
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.065 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public/v1/users/7454263
+1 > Authorization: Bearer invalid_token
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.065 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public/v1/users/999999
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.066 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public/v1/users/7454263
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.066 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > DELETE https://gorest.co.in/public/v1/users/abc123
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.708 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 637
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 76
+1 < x-ratelimit-reset: 1
+1 < x-request-id: 2decda67-1223-4098-b562-495158613f9e
+1 < x-runtime: 0.070785
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Wh78Q%2BhxZWqQS4YCwgK71vJOhbrj3J9kAa0BnGSrCeZM6CYR2o8bYLzZBV8MtTveIsvvfoO5vKH2WuOktvjWepSA746TFE9POsV3f7dQU8hYU3uJZd5klqI48i%2FjAlQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb50d193bce59-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:19.708 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 637
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 76
+1 < x-ratelimit-reset: 1
+1 < x-request-id: 1961f8e9-a352-4b8a-a5a4-2f1dc96edd67
+1 < x-runtime: 0.063801
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=k4H5jyAo9aBtL%2F7jg66RL%2FlvhzqjmHza%2B9AWwyYtoVhIW8xJ27aV4yXb6fwOc7vTTI6WKit7i7qIn7tlIz%2FRrjuF3%2BoThCO6nt%2B2yFNIrcy8zgLDPBvGk8A0nkp8htk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb50d0b34567c-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:19.708 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 637
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 358b5316-1788-4c93-ab5c-da0c50893d00
+1 < x-runtime: 0.083963
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=hk%2B77o5QIR0fn37U4SD2rci7wdpsed0i4Yump%2BOUgHasVv8CoKiAyEk1stiET5UZEuJItDVvlJ0RbVFAobcmVVSwTlZa4S7LOncZmJ67xc7J7g5SpQS1JYAAaPHf6C0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb50d0a47602f-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:19.708 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 636
+1 < 401
+1 < Date: Mon, 07 Oct 2024 11:56:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 48
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: f1a41c69-1571-4dbf-8778-d07bc9a44a71
+1 < x-runtime: 0.059824
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=JmSOCkPPeWSHSKNux89%2BtlF0qt2gBjeqxUo7klCOqNUVuqacsuP1692xZSOvGait4nTyc%2FAzdbdxL%2FSQwTsYvbnTC4lfe8BCNNj17M3cEGNW32Cl1Lsex7q4xrJYpqg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb50d0a7a4050-SIN
+{"meta":null,"data":{"message":"Invalid token"}}
+
+17:26:19.734 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v1/users/7454263
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.743 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 677
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 76
+1 < x-ratelimit-reset: 1
+1 < x-request-id: 22d7580c-3a44-49dd-88f2-19f75c928e26
+1 < x-runtime: 0.164819
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Zo0kATWgY3Jfx7U1rPOSNRsDAczk8xZKBFGMTPSroMZrwugxRedM73Qy2EpR2dmokX9Q%2F9t5bWl6y0pwN1Y9v9nxNRVjrfbyGBPktuZDif4FqPDYTo%2FZ9EFvaxuXhsg%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb50d09d4ce3f-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:19.756 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:19.756 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:19.756 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:19.756 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:19.758 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v1/users/999999
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.758 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v1/users/7453627
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.758 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v1/users/abc123
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:19.759 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v1/users/7454254
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:20.316 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 557
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 89
+1 < x-ratelimit-reset: 2
+1 < x-request-id: c274ac0a-82c7-4407-a010-95f79766f9ff
+1 < x-runtime: 0.173454
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=RELTamOzHyKUEFclH5SuFRD6BqDxQGi7AZi6m3qwmjjmOobZAoyTkBzTP%2FaxWKuENI6OzjGXmvLloinFQZd6NCLR92wmmLWij8kwktSWCLxdnRdyrjFE1UCoYPprsVc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb510dc383e2b-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:20.316 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 581
+2 < 404
+2 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-download-options: noopen
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-request-id: 76d40000-2b0c-4833-a79a-69d259187284
+2 < x-runtime: 0.105416
+2 < x-xss-protection: 0
+2 < CF-Cache-Status: DYNAMIC
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=64FBVESV%2BVuYAk7JvkkWg9YcmMygx370kNXlK6D%2FbHFmmAPhtZCFEDfxB2KQX2giwajK0HhWkUbLkSvUASG9xju%2BJAoLW2ycVQ48bPoRBgMM4NUxwIpn%2Fm8sRb7nYMI%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 8cedb5108db99e38-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:20.322 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "message": "Resource not found"
+  }
+}
+ 
+17:26:20.327 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.329 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.332 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v1/users
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:20.356 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 85
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"ankit rajput","email":"ankitrajpuail.com","gender":"male","status":"active"}
+
+17:26:20.365 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 607
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 88
+1 < x-ratelimit-reset: 2
+1 < x-request-id: 5dee1c69-e20a-4e13-8cde-ab9f001e8bcb
+1 < x-runtime: 0.159695
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=uDQiYBgXU9dSfbbJMdIBaIgwOTmpKDM5BvGwtCf2Nu%2BIe0023MxPTVKK4Q1TV%2FWND73M9vc5%2FmvrIz4ett%2FNtem5IIwLYR%2FWJg7D2zApubErTUCOHjGr%2Fzzb6xEx%2FyU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb510ba533faa-SIN
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:20.366 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "message": "Resource not found"
+  }
+}
+ 
+17:26:20.369 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.370 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 71
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"","email":"ankit@gmail.com","gender":"male","status":"active"}
+
+17:26:20.477 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 719
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"39a6ee4754d74a2c936551e4e7565939"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 88
+1 < x-ratelimit-reset: 2
+1 < x-request-id: 187b8394-e231-45f1-8b9d-24621699a2a0
+1 < x-runtime: 0.305188
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Xd6HntMjJcRSz6ixcezOW%2BZ2c3iqnbrjS5iMweyqDl%2Bghww4%2BahLuBUKEoEgSewaI9tHUDbypkEQr4vtycFfmXFTezPxyOwS5m5KsSJxVKUWo6iIuqwZf9mGQHcQZmQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb510ba9640ee-SIN
+{"meta":null,"data":{"id":7453627,"name":"Ankit Kumar","email":"ankit.kumar@example.com","gender":"female","status":"inactive"}}
+
+17:26:20.479 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "id": 7453627,
+    "name": "Ankit Kumar",
+    "email": "ankit.kumar@example.com",
+    "gender": "female",
+    "status": "inactive"
+  }
+}
+ 
+17:26:20.481 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.483 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 79
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"ankit rajput","email":"ankit@gmail.com","gender":"","status":"active"}
+
+17:26:20.615 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 856
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"c1348e1ef73fa3bf8a797794f6300047"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 87
+1 < x-ratelimit-reset: 3
+1 < x-request-id: ffe5e704-6d3e-4b3b-9efa-fb2c3901c17f
+1 < x-runtime: 0.137301
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=PSjGesz9aYj8RECen3vWOExKbS2%2FO8l%2B9bMLk6P8%2FwP7fh0YhV6DSCsqyMtxBI6Ita9B3LfF%2FodJTvwnxy68FAxlu0ALqjLYfrY%2BJJlINnGofaaDV71vMOZ6kRAmRvU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb510d85a3d9f-SIN
+{"meta":null,"data":{"id":7454254,"name":"Ankit Rajput","email":"ankitrajput98@example.com","gender":"male","status":"active"}}
+
+17:26:20.617 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "id": 7454254,
+    "name": "Ankit Rajput",
+    "email": "ankitrajput98@example.com",
+    "gender": "male",
+    "status": "active"
+  }
+}
+ 
+17:26:20.619 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.620 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 65
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"ankit rajput","email":"ankit@gmail.com","gender":"male"}
+
+17:26:20.620 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:examples/api/delete-user.feature
+17:26:20.880 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 523
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 86
+1 < x-ratelimit-reset: 4
+1 < x-request-id: aa83db64-1fe5-4833-8f46-73c6033549e6
+1 < x-runtime: 0.098093
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=MsuuK%2BZczbDlm00P5uEDd548aK%2BmYUadD6Zx4CIWp5RoEPfN5kHPaGyuzM7u5dt4AnmSabHCtMK3MnJrYo3fYdtxYlReez9Jc9n8ECU67nFSZO7oJBc7%2BWiGDUw6vAE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb5148b5e89ad-SIN
+{"meta":null,"data":[{"field":"email","message":"is invalid"}]}
+
+17:26:20.884 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "email",
+      "message": "is invalid"
+    }
+  ]
+}
+ 
+17:26:20.887 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.889 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ankit Rajput","email":"ankitrajput@gmail.com","gender":"male","status":"invalid"}
+
+17:26:20.918 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 548
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 66
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 85
+1 < x-ratelimit-reset: 4
+1 < x-request-id: a8a33241-6e2d-4f96-a98a-ca1347e35a11
+1 < x-runtime: 0.088012
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yzEzFHvPPoieq1q%2FHRmVW8ecXi6yg98rW%2FoQaflIxHp1Jd86BBmw9bImoi43wntHrumqGEo23InhbPvZxu2o5XZYMxRtDIEAg1uLD2JTpUNDgtm%2B2hydgiMZLUSG5IQ%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb514cfa187a5-SIN
+{"meta":null,"data":[{"field":"name","message":"can't be blank"}]}
+
+17:26:20.919 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "name",
+      "message": "can't be blank"
+    }
+  ]
+}
+ 
+17:26:20.921 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.922 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 22
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ankit Kumar"}
+
+17:26:20.941 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 609
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"c571160d6643a4f592b63c8318d65dcf"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 86
+1 < x-ratelimit-reset: 4
+1 < x-request-id: 10b7137b-4778-4012-a332-ee8b1fa65288
+1 < x-runtime: 0.168524
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=y7mf%2BuMrgxRJa0qwNaa%2F5ZTKPDKxNujTwY4s7M1zy%2BYOiK%2BxzMlWoNBYmhmln9WnU0IdGl8eeFu34iA5ZmfND%2FMTEC25URUqm6N5FdaGAF%2FHSuuhnFXGebw%2BUikW0o0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb5146b034035-SIN
+{"meta":{"pagination":{"total":2909,"pages":291,"page":1,"limit":10,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":7454255,"name":"Ankit Kumar","email":"ankit.kumar987@example.com","gender":"female","status":"inactive"},{"id":7454254,"name":"Ankit Rajput","email":"ankitrajput98@example.com","gender":"male","status":"active"},{"id":7454248,"name":"Ankit Rajput","email":"ankitrajput.987654321@example.com","gender":"male","status":"active"},{"id":7454238,"name":"Ankit Rajput","email":"ankitrajput.98765432@example.com","gender":"male","status":"active"},{"id":7454234,"name":"Ankit Rajput","email":"ankitrajput.9876543@example.com","gender":"male","status":"active"},{"id":7454123,"name":"Ankit Rajput","email":"ankitrajput.987654@example.com","gender":"male","status":"active"},{"id":7453627,"name":"Ankit Kumar","email":"ankit.kumar@example.com","gender":"female","status":"inactive"},{"id":7452059,"name":"Ankit Rajput","email":"an@gmail.com","gender":"male","status":"active"},{"id":7452058,"name":"Ankit Rajput","email":"ankitrajput1234@gmail.com","gender":"male","status":"active"},{"id":7452023,"name":"Ankit Rajput","email":"ankitrajput.unique@example.com","gender":"male","status":"active"}]}
+
+17:26:20.943 [pool-2-thread-5] INFO  com.intuit.karate - [print] {
+  "meta": {
+    "pagination": {
+      "total": 2909,
+      "pages": 291,
+      "page": 1,
+      "limit": 10,
+      "links": {
+        "previous": null,
+        "current": "https://gorest.co.in/public/v1/users?page=1",
+        "next": "https://gorest.co.in/public/v1/users?page=2"
+      }
+    }
+  },
+  "data": [
+    {
+      "id": 7454255,
+      "name": "Ankit Kumar",
+      "email": "ankit.kumar987@example.com",
+      "gender": "female",
+      "status": "inactive"
+    },
+    {
+      "id": 7454254,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput98@example.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7454248,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput.987654321@example.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7454238,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput.98765432@example.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7454234,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput.9876543@example.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7454123,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput.987654@example.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7453627,
+      "name": "Ankit Kumar",
+      "email": "ankit.kumar@example.com",
+      "gender": "female",
+      "status": "inactive"
+    },
+    {
+      "id": 7452059,
+      "name": "Ankit Rajput",
+      "email": "an@gmail.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7452058,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput1234@gmail.com",
+      "gender": "male",
+      "status": "active"
+    },
+    {
+      "id": 7452023,
+      "name": "Ankit Rajput",
+      "email": "ankitrajput.unique@example.com",
+      "gender": "male",
+      "status": "active"
+    }
+  ]
+}
+ 
+17:26:20.944 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.945 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"email":"ankit.kumar987@example.com"}
+
+17:26:20.958 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 338
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 68
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 84
+1 < x-ratelimit-reset: 5
+1 < x-request-id: d6620204-d7fe-4e0a-9346-6b3a1232f5b2
+1 < x-runtime: 0.073119
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=MQq156hI3SaBuYKb%2FE9tx18ANgQrKv5ohP8s1A9y7g9M2DdpMA5vQK6%2FZXKEZm6XVogJnwOT4QNKqIrjz9lUyg3D4k9JqwjQ%2FZX%2BDRb1Ov2Gx7BwKGE%2Fmt4PYtvZqxM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb5162fd09b90-SIN
+{"meta":null,"data":[{"field":"status","message":"can't be blank"}]}
+
+17:26:20.959 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "status",
+      "message": "can't be blank"
+    }
+  ]
+}
+ 
+17:26:20.960 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:20.961 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 19
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"female"}
+
+17:26:20.990 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:examples/api/get-user.feature
+17:26:21.203 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 719
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 91
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 83
+1 < x-ratelimit-reset: 6
+1 < x-request-id: 712cad38-515d-49dc-9409-84b9ec170f61
+1 < x-runtime: 0.281369
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=wapbbgjfc3V3nIc4dHpa4jlzakgX3lFZ%2FWpEMpjTbZn45OsZNygX63Ot7vR%2BB1n5fcwumK5u7X8ukI5ucCSt9FkkJIhr3dnYdqY5A7A7JpE9yneTsseqdlLBiQZwTKM%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51568469fc5-SIN
+1 < alt-svc: h3=":443"; ma=86400
+{"meta":null,"data":[{"field":"gender","message":"can't be blank, can be male of female"}]}
+
+17:26:21.204 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "gender",
+      "message": "can't be blank, can be male of female"
+    }
+  ]
+}
+ 
+17:26:21.206 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:21.208 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 21
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"status":"inactive"}
+
+17:26:21.360 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 399
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"393c4c1808a86f9c3f13a979ecc8a592"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 82
+1 < x-ratelimit-reset: 6
+1 < x-request-id: 2a1e07e3-21aa-4de4-9acb-d49b440452ae
+1 < x-runtime: 0.121392
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=o7ZschJ3nYNaN9tWLnYqhzHBBFpixZaUpnn%2FkoTBwcKch3Ll4iZII1so5YWlDQ6KdCfP5L%2FlVLHLXm5tJ4oMFYt9VSoOY8PCC4QYJnsEBVa%2FbxTuusqOZ2EvP6TSxnE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb5186ef0ce56-SIN
+{"meta":null,"data":{"gender":"female","id":7454255,"name":"Ankit Kumar","email":"ankit.kumar987@example.com","status":"inactive"}}
+
+17:26:21.363 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "gender": "female",
+    "id": 7454255,
+    "name": "Ankit Kumar",
+    "email": "ankit.kumar987@example.com",
+    "status": "inactive"
+  }
+}
+ 
+17:26:21.365 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:21.369 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 480
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 121
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 81
+1 < x-ratelimit-reset: 7
+1 < x-request-id: 8ac71b6f-ddf6-4df4-a15c-94982ce18411
+1 < x-runtime: 0.063862
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=U5EKJnnPu5pMpZuxl%2Bj5SzueXyVSEc7Gffw%2B%2BbFoLXq8V3FcHs2Wv%2B8HTClobyhT7p%2FrqAUqWi3p7ltwYreWGZkzQwrlEO9%2F2eZH3hmDCoUMD%2BhvVL6wDVZWMeQ2HsE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb517cbc740ee-SIN
+{"meta":null,"data":[{"field":"status","message":"can't be blank"},{"field":"email","message":"has already been taken"}]}
+
+17:26:21.369 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 11
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":""}
+
+17:26:21.370 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "status",
+      "message": "can't be blank"
+    },
+    {
+      "field": "email",
+      "message": "has already been taken"
+    }
+  ]
+}
+ 
+17:26:21.373 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:21.375 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"email":"invalid-email-format"}
+
+17:26:21.442 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:examples/api/post-user.feature
+17:26:21.490 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 568
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"df28bcd9b09ed3abb7a8f7e78e439b80"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 80
+1 < x-ratelimit-reset: 8
+1 < x-request-id: 6bcc7433-cb71-46b8-9bfa-c6aa5ed24dfa
+1 < x-runtime: 0.163184
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=frGTyY3pFeSaeUZg%2Bg0CiCcv2j1hQlVZfww23mq0F5KmAfiqNuz3TgcAP1OBvR7QPwGbV4ZiFId35yec1s%2FgdZyu2krBzOzLPyalWXzcmEf6q8apIJDo3MQUO72qsuc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb5180988a8da-SIN
+{"meta":null,"data":{"name":"Ankit Kumar","id":7454255,"email":"ankit.kumar987@example.com","gender":"female","status":"inactive"}}
+
+17:26:21.491 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "name": "Ankit Kumar",
+    "id": 7454255,
+    "email": "ankit.kumar987@example.com",
+    "gender": "female",
+    "status": "inactive"
+  }
+}
+ 
+17:26:21.493 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:21.494 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/9999999
+1 > Authorization: Bearer b6aa90c55a3f83552a24ef7962bed996ea747cef8d7f831d356de59cddc558a8
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 20
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Some Name"}
+
+17:26:21.536 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 328
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"ffba9dc9870a1923606cb9bfeca1a699"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 79
+1 < x-ratelimit-reset: 8
+1 < x-request-id: d91d1e6a-ec2f-4969-98f6-ebfb3eddf85c
+1 < x-runtime: 0.191494
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ju0D19boaNxy3eZq8Ca0VI%2FJAn5EBXwHnE5kMZDlTzW6O%2BHN4XHIfdvuV6q86JmEyxwNP8vLg7AXPbFX3P1pxAhHa%2Fu6FCzc0wk0LIvG2%2F4gMkJOU8LnoiZaRVuocGc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb5198f963e27-BOM
+{"meta":null,"data":{"status":"inactive","id":7454255,"name":"Ankit Kumar","email":"ankit.kumar987@example.com","gender":"female"}}
+
+17:26:21.537 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "status": "inactive",
+    "id": 7454255,
+    "name": "Ankit Kumar",
+    "email": "ankit.kumar987@example.com",
+    "gender": "female"
+  }
+}
+ 
+17:26:21.539 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:21.540 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://gorest.co.in/public/v1/users/7454255
+1 > Authorization: 
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 22
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Ankit Kumar"}
+
+17:26:21.563 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 618
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < etag: W/"5c2c9432576864ed83aab6675f0834d1"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 80
+1 < x-ratelimit-reset: 8
+1 < x-request-id: dfed0b7c-b34b-4092-abb8-669b98d664c2
+1 < x-runtime: 0.178506
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Rky0mu3pjnapND6rkB5uFfPaPwpHpU3hCKdjKd5qoO%2FAqga9a2F%2FyyFycHUL21jS12ZrktQY95Mpp%2FWPEHohm5m1wgz1pb8MDwny5pZM1%2Fqc3abNM3RqzTu7GqgnMYk%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51838044816-SIN
+{"meta":null,"data":{"email":"ankit.kumar987@example.com","id":7454255,"name":"Ankit Kumar","gender":"female","status":"inactive"}}
+
+17:26:21.564 [pool-2-thread-5] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "email": "ankit.kumar987@example.com",
+    "id": 7454255,
+    "name": "Ankit Kumar",
+    "gender": "female",
+    "status": "inactive"
+  }
+}
+ 
+17:26:21.565 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:26:21.566 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/23)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:26:21.639 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 72
+1 < 200
+1 < Date: Mon, 07 Oct 2024 11:56:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1726549035&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=R%2BswlTM9HveXChYpOUbz4VdKWruxHjbiOWeREclBkCU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726549035&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=R%2BswlTM9HveXChYpOUbz4VdKWruxHjbiOWeREclBkCU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1726549044
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 318
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51b8d011792-MAA
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+17:26:21.957 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 587
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 66
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 78
+1 < x-ratelimit-reset: 9
+1 < x-request-id: 83d566fa-47d3-4325-960f-e62984f54313
+1 < x-runtime: 0.389931
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=6baV7p2fVXxUKnDLh8kCQZkQSEd698PbXxVJyYwI5PEJ4vdZuIMIMIsdGTSsEpVB2wWzlqOgL%2F4fXNMDNpV63omFrduSwTBhKyjAVen1ZXzIjY3cx%2FcZfQoVl2P66fo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51a8e714055-BOM
+{"meta":null,"data":[{"field":"name","message":"can't be blank"}]}
+
+17:26:21.963 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "name",
+      "message": "can't be blank"
+    }
+  ]
+}
+ 
+17:26:21.988 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 447
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-request-id: 706dbc3b-ac65-4bd7-aabe-2740d53521c1
+1 < x-runtime: 0.263967
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=DUwCZ1HXIIybHVm4CZ%2B5WoOhZPLSxMrZLM9%2B4gWNR%2FFnSWJYRiz%2BEvXdATCnOGD4Lav2XcmWJhwkOBHV0x9ivt7pIrIpt2z0x12O4eTQPyFqYwBkWPO8gK0n8wfOHD0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51b7e193b1f-BOM
+1 < alt-svc: h3=":443"; ma=86400
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:21.989 [pool-2-thread-4] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "message": "Resource not found"
+  }
+}
+ 
+17:26:21.999 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 505
+1 < 404
+1 < Date: Mon, 07 Oct 2024 11:56:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 77
+1 < x-ratelimit-reset: 10
+1 < x-request-id: 73bd7806-3d29-43c3-9bc3-fa21b8f4f0c7
+1 < x-runtime: 0.386900
+1 < x-xss-protection: 0
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tVkyXyC2qzPRBt7FYhYjvzJFlNVqHq87r5Tv63t17uqrPz6NNlNQFKZkPv6K%2BlFnhirkzBeqv6hIPAZ4YAiT0z%2Bwi7xi%2FRVtY%2BzyR5a5Zl3iLS4Y7DtLiCxzJmSnmOo%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51b3ded48d1-BOM
+{"meta":null,"data":{"message":"Resource not found"}}
+
+17:26:22.000 [pool-2-thread-2] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": {
+    "message": "Resource not found"
+  }
+}
+ 
+17:26:22.092 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 717
+1 < 422
+1 < Date: Mon, 07 Oct 2024 11:56:22 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 63
+1 < Connection: keep-alive
+1 < Cache-Control: no-cache
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-download-options: noopen
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 90
+1 < x-ratelimit-remaining: 78
+1 < x-ratelimit-reset: 9
+1 < x-request-id: 1bc2c5ea-19c6-4807-a0b4-f365788895ac
+1 < x-runtime: 0.475053
+1 < x-xss-protection: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=R9fr8wArGdKsUTHvprEYB4fQhKYqLc8FgEewk17IRRQHd%2B5s%2B1A0tT7%2FUUNhvC3wlBMqWY6ZhpZ0uD0Q4QYpVbtO%2F6USpvPEbaIGc1MXpIKV9jVCjb8I77LqzznfEL4%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8cedb51a9a79425a-BOM
+{"meta":null,"data":[{"field":"email","message":"is invalid"}]}
+
+17:26:22.094 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "meta": null,
+  "data": [
+    {
+      "field": "email",
+      "message": "is invalid"
+    }
+  ]
+}
+ 
+17:26:22.155 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:examples/api/put-user.feature
+17:26:22.165 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:examples/api/users.feature
