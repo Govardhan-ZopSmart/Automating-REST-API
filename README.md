@@ -39,7 +39,7 @@ mvn test
 
 ## Project Structure
 
-
+```
 karate-api-testing
  ├── .vscode                           
  ├── src
@@ -56,12 +56,13 @@ karate-api-testing
  ├── pom.xml                           # Maven configuration file
  └── README.md                         # Documentation
 
+```
 
 ## Writing Tests
 The test cases are written in Karate's Gherkin syntax and include both positive and negative scenarios for testing CRUD operations on the `/public/v1/users` endpoint.
 
 ### Example Test Case: `POST` request in `post-user.feature`
-
+```
 Feature: User API tests
 
   Scenario: Create a new user
@@ -71,7 +72,7 @@ Feature: User API tests
     When method POST
     Then status 201
     And match response.name == 'Ankit Rajput'
-
+```
 
 ## Test Reporting and Execution Result
 After running the tests, Karate generates detailed HTML reports. You can find the test report at:
